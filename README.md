@@ -2,7 +2,7 @@
 son las pruebas realizadas con kraken a Ghost
 
 ## Pre Requisitos: 
-1. tener instalado Kraken : https://www.cypress.io/
+1. tener instalado Kraken : https://thesoftwaredesignlab.github.io/KrakenMobile/
 2. tener instalado Ghost: https://ghost.org/docs/install/
 3. Crear un usuario administrador en Ghost
 
