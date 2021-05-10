@@ -17,8 +17,11 @@ Remplaze en el archivo properties.json los campos necesarios y el puerto en las 
         ......
 
 ## Ejecutar
-En la carpeta raíz de este proyecto con la herramienta ejecute 
-      kraken-mobile run --properties="properties.json"
+En la carpeta raíz de este proyecto con la herramienta ejecute:
+
+        kraken-mobile run --properties="properties.json"
+
+      
 
 | Funcionalidades | Escenarios | Descripción 	 |
 |-------------------------|---------------------------|---------------------------|
