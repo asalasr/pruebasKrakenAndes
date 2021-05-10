@@ -1,0 +1,27 @@
+{
+    "@user1": {
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+    },
+    "@user2": {
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+    },
+    "@user3": {
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+    },
+    "@user4": {
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+    },
+    "@user5": {
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+    }
+}
