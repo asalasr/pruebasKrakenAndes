@@ -48,6 +48,20 @@ Feature: Shared board connection
     And I go back to pages
     Then I confirm the user "dw"
 
+  @user5 @web
+  Scenario: Escenario No.5 verificar la existencia url de una pagina
+    Given I navigate to page "http://www.localhost:2371/ghost/"
+    When I enter my email "af.baron10@uniandes.edu.co" 
+    And I enter my password "Juanpablo1"
+    When I click on sign in
+    And I visit pages
+    When I click on new page
+    And I write a new title "Test de prueba"
+    And I publish my page
+    And I go back to pages
+   
+
+
 
 
 
