@@ -24,4 +24,9 @@ En la carpeta raíz de este proyecto con la herramienta ejecute kraken-mobil run
 |Publicar una página |Escenario 8 publicar una página y verificar en la parte inferior de la página su publicación|Se realiza login, se crea una página, se verifica la página en la lista, se ingresa nuevamente a la página, se publica, se verifica que en la página principal se encuentre publicado.
 |Verificar el autor de una página |Escenario 9 publicar una página y verificar en la parte superior derecha en las configuraciones de la página su creador|Se realiza login, se crea una página, se verifica la página en la lista, se ingresa nuevamente a la página, se verifica en las configuraciones en la página principal superior derecha se encuentre el respectivo creador parametrizado.
 |Validar la existencia del link de una pagina luego de creada|Escenario 10 publicar una página y verificar la existencia de la publicación|Se realiza login, se crea una página, se verifica la página en la lista, se ingresa nuevamente a la página, se accede a configuraciones en la parte superior derecha y se accede al link creado.
+|Crear Tag |Escenario 11 creacion de tags | Se realiza el login, se direciona a tags se diligencia el nombre y el slug y se guarda|
+|Validar Tag Post |Escenario 12 validacion de tags en post| Se realiza el login, se direciona a post, se ingresa a la pagina welcome, se ingresa a los settigns y se seleciona el yag creado.
+|Validar Tag Page |Escenario 13 validacion de tags en post| Se realiza el login, se direciona a page, se ingresa una Page, se ingresa a los settigns y se seleciona el tag creado.
+|Eliminar Tag |Escenario 14 Eliminacion de tags| Se realiza el login, se direciona a tags, se seleciona uno, se selecciona la opcion de eliminar, luego de confirmar y se retorna al listado de tags
+|Validar Tag En Web Reader |Escenario 15 Validar tags en el sitio de lectura| Se ingresa al sitio e lectura a la pagina welcome y se valida el tag asociado a la pagina.
 
