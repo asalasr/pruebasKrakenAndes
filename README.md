@@ -7,7 +7,7 @@ son las pruebas realizadas con kraken a Ghost
 3. Crear un usuario administrador en Ghost
 
 ## Configuración inicial:
-Remplaze en el archivo properties.json los campos necesarios y el puerto en las rutas, segun su servicio de Ghost
+Remplaze en el archivo properties.json los campos necesarios y el puerto en las rutas, segun su servicio de Ghost, OJO: EN TODOS LOS USUARIOS.
         
  ### Ejemplo:
 
