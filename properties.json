@@ -2,30 +2,36 @@
     "@user1": {
         "USER1": "js.segura@uniandes.edu.co",
         "PASSWORD1": "M3iqQFS!e_PGFyD",
-        "URI": "http://192.168.1.250:2368/ghost/#/signin",
-        "EDITORPOST":"http://localhost:2371/ghost/#/editor/post",
-        "POST":"http://localhost:2371/ghost/#/posts",
-        "PAGINAFRONT":"http://localhost:2371/",
-        "POSTPUBLISHET":"http://localhost:2371/ghost/#/posts?type=published"
+        "URI": "http://localhost:2368/ghost/#/signin",
+        "EDITORPOST":"http://localhost:2368/ghost/#/editor/post",
+        "POST":"http://localhost:2368/ghost/#/posts",
+        "PAGINAFRONT":"http://localhost:2368/",
+        "POSTPUBLISHET":"http://localhost:2368/ghost/#/posts?type=published",
+        "TAGS":"http://localhost:2368/ghost/#/tags",
+        "TAGSNEW":"http://localhost:2371/ghost/#/tags/new"
     },
     "@user2": {
         "USER1": "js.segura@uniandes.edu.co",
         "PASSWORD1": "M3iqQFS!e_PGFyD",
-        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+        "URI": "http://localhost:2368/ghost/#/signin",
+        "POST":"http://localhost:2368/ghost/#/posts",
     },
     "@user3": {
         "USER1": "js.segura@uniandes.edu.co",
         "PASSWORD1": "M3iqQFS!e_PGFyD",
-        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+        "URI": "http://localhost:2368/ghost/#/signin",
+        "WELCOME":"http://localhost:2371/welcome/"
     },
     "@user4": {
         "USER1": "js.segura@uniandes.edu.co",
         "PASSWORD1": "M3iqQFS!e_PGFyD",
-        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+        "URI": "http://localhost:2368/ghost/#/signin",
+        "WELCOME":"http://localhost:2368/welcome/"
     },
     "@user5": {
         "USER1": "js.segura@uniandes.edu.co",
         "PASSWORD1": "M3iqQFS!e_PGFyD",
-        "URI": "http://192.168.1.250:2368/ghost/#/signin"
+        "URI": "http://localhost:2368/ghost/#/signin",
+        "TAGS":"http://localhost:2368/ghost/#/tags"
     }
 }
