@@ -7,10 +7,18 @@ son las pruebas realizadas con kraken a Ghost
 3. Crear un usuario administrador en Ghost
 
 ## Configuración inicial:
-Remplaze en todos los archivos el correo y la contraseña respectiva para ingresar a ghost
+Remplaze en el archivo properties.json los campos necesarios y el puerto en las rutas, segun su servicio de Ghost
+        
+ ### Ejemplo:
+
+        "USER1": "js.segura@uniandes.edu.co",
+        "PASSWORD1": "M3iqQFS!e_PGFyD",
+        "URI":"http://192.168.1.250:2368/ghost/#/signin"
+        ......
 
 ## Ejecutar
-En la carpeta raíz de este proyecto con la herramienta ejecute kraken-mobil run
+En la carpeta raíz de este proyecto con la herramienta ejecute 
+      kraken-mobile run --properties="properties.json"
 
 | Funcionalidades | Escenarios | Descripción 	 |
 |-------------------------|---------------------------|---------------------------|
