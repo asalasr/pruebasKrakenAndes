@@ -1,12 +1,27 @@
 if ENV["ADB_DEVICE_ARG"].nil?
   require 'kraken-mobile/steps/web/kraken_steps'
-	
+
+  Then(/^I store a variable with the current url$/) do
+    $url_variable = @driver.current_url
+    File.write('./.variable.txt', $url_variable)
+    puts($url_variable) 
+  end
+
   Given(/^I navigate to page with the url stored in the variable$/) do
     $url_variable = IO.read("./.variable.txt")  
-    puts($url_variable)
-    @driver.navigate.to $url_variable
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]
     sleep 2
   end
+
+  Given("I am authenticated I logged in successfully") do
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[1])
+    @driver.find_element(:xpath, "//*[@id='ember8']").send_keys($url_variable.split(",",3)[1])
+    @driver.find_element(:xpath, "//*[@id='ember10']").send_keys($url_variable.split(",",3)[2])
+    @driver.find_element(:xpath, "//*[@id='ember12']").click()
+    sleep 2
+  end  
 
   When("I enter my email {string}") do |text|
     @driver.find_element(:xpath, "//*[@id='ember8']").send_keys(text)
