@@ -10,7 +10,7 @@ if ENV["ADB_DEVICE_ARG"].nil?
   Given(/^I navigate to page with the url stored in the variable$/) do
     $url_variable = IO.read("./.variable.txt")  
     puts($url_variable.split(",",3)[0])
-    @driver.navigate.to $url_variable.split(",",3)[0]
+    @driver.navigate.to $url_variable.split(",",3)[0]+"/ghost/#/signin"
     sleep 2
   end
 
@@ -35,6 +35,22 @@ if ENV["ADB_DEVICE_ARG"].nil?
    
   end
 
+  When("I go to page whit url {string}") do |text|
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]+""+text
+    sleep 2
+   
+  end
+
+  Then("I go to page whit url {string}") do |text|
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]+""+text
+    sleep 2
+   
+  end
+
   When("I click on sign in") do 
     @driver.find_element(:xpath, "//*[@id='ember12']/span").click()
     sleep 2
@@ -43,7 +59,9 @@ if ENV["ADB_DEVICE_ARG"].nil?
 
 
   When("I visit pages") do 
-    @driver.navigate.to "http://www.localhost:2371/ghost/#/pages"
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]+"/ghost/#/pages"
     sleep 2
   end
 
@@ -63,8 +81,9 @@ if ENV["ADB_DEVICE_ARG"].nil?
   end
 
   When("I go back to pages without publishing") do 
-
-    @driver.navigate.to "http://www.localhost:2371/ghost/#/pages"
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]+"/ghost/#/pages"
     # @driver.find_element(:xpath, "/html/body/div[2]/div/main/section/header/div/div[1]/a").click()
     # sleep 6
     # @driver.find_element(:xpath, "/html/body/div[2]/div/main/section/header/div/div[1]/a").click()
@@ -82,7 +101,9 @@ if ENV["ADB_DEVICE_ARG"].nil?
   
 
   When("I go back to pages") do 
-    @driver.navigate.to "http://www.localhost:2371/ghost/#/pages"
+    $url_variable = IO.read("./.variable.txt")  
+    puts($url_variable.split(",",3)[0])
+    @driver.navigate.to $url_variable.split(",",3)[0]+"/ghost/#/pages"
     sleep 6
   end
 
@@ -108,21 +129,6 @@ if ENV["ADB_DEVICE_ARG"].nil?
     
   end
 
-  Then(/^I store a variable with the current url$/) do
-    $url_variable = @driver.current_url    
-    File.write('./.variable.txt', $url_variable)
-    puts($url_variable) 
-  end
-
-  Given(/^I navigate to page with the url stored in the variable$/) do
-    $url_variable = IO.read("./.variable.txt")  
-    puts($url_variable)
-    @driver.navigate.to $url_variable
-    sleep 2
-  end
-  
-
-
   Then("I click in path {string}") do |path|
     @driver.find_element(:xpath,path).click()
     sleep 1
@@ -137,19 +143,6 @@ if ENV["ADB_DEVICE_ARG"].nil?
     sleep 1
     @driver.navigate.to $url_variable
     
-    Then(/^I store a variable with the current url$/) do
-      $url_variable = @driver.current_url    
-      File.write('./.variable.txt', $url_variable)
-      puts($url_variable) 
-    end
-  
-    Given(/^I navigate to page with the url stored in the variable$/) do
-      $url_variable = IO.read("./.variable.txt")  
-      puts($url_variable)
-      @driver.navigate.to $url_variable
-      sleep 2
-    end
-    
     Then ("I click on element {string}")do |field|
       @driver.find_element(:xpath,field).click()
       sleep 1
@@ -161,28 +154,7 @@ if ENV["ADB_DEVICE_ARG"].nil?
     end
 
   end
-  Then(/^I store a variable with the current url$/) do
-    $url_variable = @driver.current_url
-    File.write('./.variable.txt', $url_variable)
-    puts($url_variable) 
-  end
-
-  Given(/^I navigate to page with the url stored in the variable$/) do
-    $url_variable = IO.read("./.variable.txt")  
-    puts($url_variable.split(",",3)[0])
-    @driver.navigate.to $url_variable.split(",",3)[0]
-    sleep 2
-  end
-
-  Given("I am authenticated I logged in successfully") do
-    $url_variable = IO.read("./.variable.txt")  
-    puts($url_variable.split(",",3)[1])
-    @driver.find_element(:xpath, "//*[@id='ember8']").send_keys($url_variable.split(",",3)[1])
-    @driver.find_element(:xpath, "//*[@id='ember10']").send_keys($url_variable.split(",",3)[2])
-    @driver.find_element(:xpath, "//*[@id='ember12']").click()
-    sleep 2
-  end
-
+  
   When("I go to de General option") do 
     @driver.find_element(:xpath, "/html/body/div[2]/div/nav[1]/section/div[1]/ul[3]/li[2]/a").click()
   end 
@@ -190,8 +162,6 @@ if ENV["ADB_DEVICE_ARG"].nil?
   When('Expand time zone option') do
     @driver.find_element(:xpath, "/html/body/div[2]/div/main/section/div/section/div[2]/div[2]/div[2]/button/span").click()
   end  
-
-  
 
   When('Click on general save button') do
     @driver.find_element(:xpath, "/html/body/div[2]/div/main/section/div/header/section/button/span").click()

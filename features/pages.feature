@@ -2,10 +2,8 @@ Feature: Shared board connection
 
   @user1 @web
   Scenario: Escenario No.1 probar el borrador de una pagina 
-    Given I navigate to page "http://www.localhost:2371/ghost/"
-    When I enter my email "af.baron10@uniandes.edu.co" 
-    And I enter my password "Juanpablo1"
-    When I click on sign in
+    Given I navigate to page with the url stored in the variable
+    Given I am authenticated I logged in successfully
     And I visit pages
     And I click on new page
     And I write a new title "Test de prueba"
@@ -14,10 +12,8 @@ Feature: Shared board connection
 
   @user2 @web
   Scenario: Escenario No.2 probar la publicación de una pagina 
-    Given I navigate to page "http://www.localhost:2371/ghost/"
-    When I enter my email "af.baron10@uniandes.edu.co" 
-    And I enter my password "Juanpablo1"
-    When I click on sign in
+    Given I navigate to page with the url stored in the variable
+    Given I am authenticated I logged in successfully
     And I visit pages
     And I click on new page
     And I write a new title "Test de prueba"
@@ -25,10 +21,8 @@ Feature: Shared board connection
 
   @user3 @web
   Scenario: Escenario No.3 eliminar una pagina
-    Given I navigate to page "http://www.localhost:2371/ghost/"
-    When I enter my email "af.baron10@uniandes.edu.co" 
-    And I enter my password "Juanpablo1"
-    When I click on sign in
+    Given I navigate to page with the url stored in the variable
+    Given I am authenticated I logged in successfully
     And I visit pages
     And I click on new page
     And I write a new title "Test de prueba"
@@ -37,10 +31,8 @@ Feature: Shared board connection
 
   @user4 @web
   Scenario: Escenario No.4 verificar el autor de una pagina
-    Given I navigate to page "http://www.localhost:2371/ghost/"
-    When I enter my email "af.baron10@uniandes.edu.co" 
-    And I enter my password "Juanpablo1"
-    When I click on sign in
+    Given I navigate to page with the url stored in the variable
+    Given I am authenticated I logged in successfully
     And I visit pages
     When I click on new page
     And I write a new title "Test de prueba"
