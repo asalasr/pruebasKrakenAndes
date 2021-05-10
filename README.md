@@ -22,6 +22,7 @@ En la carpeta raíz de este proyecto con la herramienta ejecute:
         kraken-mobile run --properties="properties.json"
 
       
+## Tabla de funcionalidades y Escenarios:
 
 | Funcionalidades | Escenarios | Descripción 	 |
 |-------------------------|---------------------------|---------------------------|
