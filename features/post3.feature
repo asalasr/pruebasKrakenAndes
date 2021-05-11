@@ -7,12 +7,12 @@ Feature: Publicar un post
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<POST>"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I click in path "/html/body/div[2]/div/main/section/section/ol/li[2]/a[2]/h3"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I click in path "/html/body/div[2]/div/main/section/header/section/div/div[1]"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I click in path "/html/body/div[1]/div/footer/button[2]"
-    Then I wait for 2 seconds
+    Then I wait for 5 seconds
     Then I navigate to page "<PAGINAFRONT>"
     

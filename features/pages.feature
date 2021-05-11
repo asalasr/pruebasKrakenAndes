@@ -7,6 +7,7 @@ Feature: Shared board connection
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<PAGES>"
+    Then I wait for 6 seconds 
     And I click on new page
     And I write a new title "Test de prueba"
     Then I navigate to page "<PAGES>"
@@ -19,6 +20,7 @@ Feature: Shared board connection
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<PAGES>"
+    Then I wait for 6 seconds 
     And I click on new page
     And I write a new title "Test de prueba"
     Then I publish my page
@@ -30,6 +32,7 @@ Feature: Shared board connection
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<PAGES>"
+    Then I wait for 6 seconds 
     And I click on new page
     And I write a new title "Test de prueba"
     And I publish my page
@@ -42,6 +45,7 @@ Feature: Shared board connection
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<PAGES>"
+    Then I wait for 6 seconds 
     When I click on new page
     And I write a new title "Test de prueba"
     And I publish my page
@@ -55,6 +59,7 @@ Feature: Shared board connection
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<PAGES>"
+    Then I wait for 6 seconds 
     When I click on new page
     And I write a new title "Test de prueba"
     And I publish my page

@@ -7,10 +7,10 @@ Feature: Publicar un post
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
     Then I navigate to page "<POSTPUBLISHET>"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I click in path "/html/body/div[2]/div/main/section/section/ol/li[2]/a[2]"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I click in path "/html/body/div[2]/div/main/section/header/section/button"
-    Then I wait for 3 seconds
+    Then I wait for 5 seconds
     Then I visit to slug route
     

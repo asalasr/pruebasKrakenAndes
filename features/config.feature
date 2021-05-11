@@ -22,6 +22,7 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
   When I click on element having id "ember12"  
+  Then I wait for 5 seconds 
   When I go to de General option
   When Expand time social Account
   Then I set incorrect value in Social accounts input and screen show alert
@@ -32,11 +33,13 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
   When I click on element having id "ember12"
+  Then I wait for 5 seconds 
   When I go to de General option
   When Expand title button
   When Change title in general option
   When Click on general save button
   Then I refresh page
+  Then I wait for 5 seconds 
   Then Expand title button
   Then Validate title 
 
@@ -46,11 +49,13 @@ Scenario: Given: Given: Estando loggeado exitosamente en la aplicación. WHEN: A
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
   When I click on element having id "ember12"
+  Then I wait for 5 seconds 
   When I go to de General option    
   When Expand Language button
   When Change Language in general option
   When Click on general save button    
   Then I refresh page
+  Then I wait for 5 seconds 
   When Expand Language button    
   Then Validate Languaje
 
@@ -60,10 +65,12 @@ Scenario: Given: Given: Estando loggeado exitosamente en la aplicación. WHEN: A
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
     When I click on element having id "ember12"
+    Then I wait for 5 seconds 
     When I go to de General option
     When Expand metadata button
     When Change metadata title in general option  
     When Click on general save button  
     Then I refresh page  
+    Then I wait for 5 seconds 
     When Expand metadata button
     Then Validate metadata
