@@ -20,6 +20,8 @@ Remplaze en el archivo properties.json los campos necesarios y el puerto en las 
         "PASSWORD1": "M3iqQFS!e_PGFyD",
         "URI":"http://192.168.1.250:2368/ghost/#/signin"
         ......
+        
+        En USER4 se solicita un "GHOSTUSER", este corresponde al usuario de ghost asignado al momento de crear el usuario de login.
 
 ## Ejecutar
 En la carpeta raíz de este proyecto con la herramienta ejecute:
