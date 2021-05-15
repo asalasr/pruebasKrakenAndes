@@ -1,6 +1,8 @@
 if ENV["ADB_DEVICE_ARG"].nil?
   require 'kraken-mobile/steps/web/kraken_steps'
 
+  $_id=0
+
   Then(/^I store a variable with the current url$/) do
     $url_variable = @driver.current_url
     File.write('./.variable.txt', $url_variable)
@@ -288,8 +290,61 @@ if ENV["ADB_DEVICE_ARG"].nil?
       raise 'Los valores no coinciden prueba fallida'
    end
   end  
+# Hooks
+AfterStep do |scenario, test_step|              
+  if test_step.text == "mark scenarion escenario1"
+    $featurescenariostep ="escenario1"
+  elsif test_step.text == "mark scenarion escenario2"
+    $featurescenariostep= "escenario2"
+  elsif test_step.text == "mark scenarion escenario3"
+    $featurescenariostep= "escenario3"
+  elsif test_step.text == "mark scenarion escenario4"
+    $featurescenariostep= "escenario4"
+  elsif test_step.text == "mark scenarion escenario5"
+    $featurescenariostep= "escenario5"
+  elsif test_step.text == "mark scenarion escenario6"
+    $featurescenariostep= "escenario6"
+  elsif test_step.text == "mark scenarion escenario7"
+    $featurescenariostep= "escenario7"
+  elsif test_step.text == "mark scenarion escenario8"
+    $featurescenariostep= "escenario8"
+  elsif test_step.text == "mark scenarion escenario9"
+    $featurescenariostep= "escenario9"
+  elsif test_step.text == "mark scenarion escenario10"
+    $featurescenariostep="escenario10"
+  elsif test_step.text == "mark scenarion escenario11"
+    $featurescenariostep="escenario11"
+  elsif test_step.text == "mark scenarion escenario12"
+    $featurescenariostep="escenario12"
+  elsif test_step.text == "mark scenarion escenario13"
+    $featurescenariostep="escenario13"
+  elsif test_step.text == "mark scenarion escenario14"
+    $featurescenariostep="escenario14"
+  elsif test_step.text == "mark scenarion escenario15"
+    $featurescenariostep="escenario15"
+  elsif test_step.text == "mark scenarion escenario16"
+    $featurescenariostep="escenario16"
+  elsif test_step.text == "mark scenarion escenario17"
+    $featurescenariostep="escenario17"
+  elsif test_step.text == "mark scenarion escenario18"
+    $featurescenariostep="escenario18"
+  elsif test_step.text == "mark scenarion escenario19"
+    $featurescenariostep="escenario19"
+  elsif test_step.text == "mark scenarion escenario20"
+    $featurescenariostep="escenario20"
+  end
+  $versionapp = '4.5.0'
+  Dir.mkdir("./tvr") unless File.exist?("./tvr")
+  Dir.mkdir("./tvr/#{$versionapp}") unless File.exist?("./tvr/#{$versionapp}")
+  Dir.mkdir("./tvr/#{$versionapp}/#{$featurescenariostep}") unless File.exist?("./tvr/#{$versionapp}/#{$featurescenariostep}")
+  path = "./tvr/#{$versionapp}/#{$featurescenariostep}/#{$_id}.png"
+  $_id = $_id  + 1
+  @driver.save_screenshot(path)
+  embed(path, 'image/png', File.basename(path))    
+end  
   
-  
-  
+Given("mark scenarion {string}" ) do  |text|
+  $featurescenariostep = text;  
+end  
 
 end

@@ -2,6 +2,7 @@ Feature: Publicar un post
 
   @user1 @web
   Scenario: Escenario 5 Eliminar un post publicado
+    Given mark scenarion "escenario15"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"

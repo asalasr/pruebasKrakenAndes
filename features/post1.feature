@@ -2,6 +2,7 @@ Feature: Crear un post como borrador
 
   @user1 @web
   Scenario: Escenario 1 crear un post como borrador con título
+    Given mark scenarion "escenario11"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"

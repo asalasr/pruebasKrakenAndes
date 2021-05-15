@@ -3,6 +3,7 @@ Feature: Validation Tags
 
   @user1 @web
   Scenario: Create Tag
+    Given mark scenarion "escenario16"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -15,6 +16,7 @@ Feature: Validation Tags
   
   @user2 @web
   Scenario: Validate Tag in Post
+    Given mark scenarion "escenario17"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -28,6 +30,7 @@ Feature: Validation Tags
       
   @user3 @web
   Scenario: Validate Tag in Tag
+    Given mark scenarion "escenario18"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -37,6 +40,7 @@ Feature: Validation Tags
     
   @user4 @web
   Scenario: Validate Tag in Web Reader
+    Given mark scenarion "escenario19"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -46,6 +50,7 @@ Feature: Validation Tags
     
   @user5 @web
   Scenario: Delete Tag
+    Given mark scenarion "escenario20"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"

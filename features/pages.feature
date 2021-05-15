@@ -2,6 +2,7 @@ Feature: Shared board connection
 
   @user1 @web
   Scenario: Escenario No.1 probar el borrador de una pagina 
+    Given mark scenarion "escenario6"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -15,6 +16,7 @@ Feature: Shared board connection
 
   @user2 @web
   Scenario: Escenario No.2 probar la publicación de una pagina 
+    Given mark scenarion "escenario7"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -27,6 +29,7 @@ Feature: Shared board connection
 
   @user3 @web
   Scenario: Escenario No.3 eliminar una pagina
+    Given mark scenarion "escenario8"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -40,6 +43,7 @@ Feature: Shared board connection
 
   @user4 @web
   Scenario: Escenario No.4 verificar el autor de una pagina
+    Given mark scenarion "escenario9"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -54,6 +58,7 @@ Feature: Shared board connection
 
   @user5 @web
   Scenario: Escenario No.5 verificar la existencia url de una pagina
+    Given mark scenarion "escenario10"
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -64,11 +69,3 @@ Feature: Shared board connection
     And I write a new title "Test de prueba"
     And I publish my page
     Then I navigate to page "<PAGES>"
-   
-
-
-
-
-
-
-  

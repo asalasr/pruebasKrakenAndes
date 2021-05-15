@@ -2,6 +2,7 @@ Feature: Eliminar un post
 
   @user1 @web
   Scenario: Escenario 2 Eliminar un post
+  Given mark scenarion "escenario12"
    Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"

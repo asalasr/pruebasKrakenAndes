@@ -1,6 +1,7 @@
 Feature: Shared board connection
  @user1 @web
 Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualizo la zona horaria a un nuevo valor THEN: La nueva zona horaria se mantiene con el nuevo valor.          
+  Given mark scenarion "escenario1"
   Given I navigate to page "<URI>"
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -18,6 +19,7 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
 
 @user2 @web
 Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualizo Social Account con un valor de URL incorrecto THEN: Aparece una alerta que advierte el error.
+  Given mark scenarion "escenario2"
   Given I navigate to page "<URI>"
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -29,6 +31,7 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
 
 @user3 @web
 Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualizo el titulo del site con un valor correcto. THEN: El valor ingresado como titulo se mantiene con el nuevo valor
+  Given mark scenarion "escenario3"
   Given I navigate to page "<URI>"
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -45,6 +48,7 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
 
 @user4 @web
 Scenario: Given: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualizo el Lenguaje del site con un valor correcto. THEN: El valor ingresado como lenguaje se mantiene con el nuevo valor
+  Given mark scenarion "escenario4"
   Given I navigate to page "<URI>"
   When I enter "<USER1>" into input field having id "ember8"
   When I enter "<PASSWORD1>" into input field having id "ember10"
@@ -61,6 +65,7 @@ Scenario: Given: Given: Estando loggeado exitosamente en la aplicación. WHEN: A
 
   @user5 @web
   Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualizo la informacion de site metadata info con un valor correcto. THEN: El valor ingresado en titulo y descripcion se mantiene con los  nuevos valores.
+    Given mark scenarion "escenario5"                          
     Given I navigate to page "<URI>"
     When I enter "<USER1>" into input field having id "ember8"
     When I enter "<PASSWORD1>" into input field having id "ember10"
