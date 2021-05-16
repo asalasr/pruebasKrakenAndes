@@ -8,13 +8,13 @@ Scenario: Given: Estando loggeado exitosamente en la aplicación. WHEN: Actualiz
   When I click on element having id "ember12"
   When I go to de General option
   When Expand time zone option
-  When I select option with value "America/Chicago" for dropdown with id "activeTimezone"
+  When I select option with value "America/Chicago" for dropdown with id "timezone"
   When Click on general save button
   Then I refresh page
   Then I go to de General option
   Then Expand time zone option    
   Then I compare values in select input "America/Chicago"
-  Then I select option with value "Europe/Amsterdam" for dropdown with id "activeTimezone"
+  Then I select option with value "Europe/Amsterdam" for dropdown with id "timezone"
   Then Click on general save button
 
 @user2 @web
